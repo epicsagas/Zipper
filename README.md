@@ -1,5 +1,5 @@
 # Note
-> This is forked package supporting for Laravel 7 from [chumper/zipper](https://github.com/appointer/swaggervel). So all code, concept and design rights is belong to [chumper](https://github.com/chumper).
+> This is forked package supporting for Laravel 7 from [chumper/zipper](https://github.com/chumper/Zipper). So all code, concept and design rights is belong to [chumper](https://github.com/chumper).
 > Installation `composer require epicsagas/zipper:dev-master`
 
 # Note
