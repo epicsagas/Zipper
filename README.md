@@ -1,5 +1,8 @@
 # Note
+> This is forked package supporting for Laravel 7 from [chumper/zipper](https://github.com/appointer/swaggervel). So all code, concept and design rights is belong to [chumper](https://github.com/chumper).
+> Installation `composer require epicsagas/zipper:dev-master`
 
+# Note
 I haven't updated this package in a long time except merging PRs. The last time I was using this package was with PHP5.
 I archived the repository for the reason that I am no longer working with PHP (we all have to move on sometimes) and have no time to take proper care of it anymore.
 
@@ -20,14 +23,14 @@ This is a simple Wrapper around the ZipArchive methods with some handy functions
 ## Installation
 
 1. Add this package to the list of required packages, inside `composer.json`
-  * for Laravel 5: `"chumper/zipper": "1.0.x"`
+  * for Laravel 7: `"chumper/zipper": "1.0.x"`
   * ~~for Laravel 4: `"chumper/zipper": "0.5.x"`~~
 2. Run `composer update`
 
 3. Go to `app/config/app.php`
 
-  * add to providers `Chumper\Zipper\ZipperServiceProvider::class`
-  * add to aliases `'Zipper' => Chumper\Zipper\Zipper::class`
+  * add to providers `Epicsagas\Zipper\ZipperServiceProvider::class`
+  * add to aliases `'Zipper' => Epicsagas\Zipper\Zipper::class`
 
 You can now access Zipper with the `Zipper` alias.
 
@@ -40,7 +43,7 @@ Zipper::make('public/test.zip')->add($files)->close();
 
 ## Another example
 ```php
-$zipper = new \Chumper\Zipper\Zipper;
+$zipper = new \Epicsagas\Zipper\Zipper;
 
 $zipper->make('test.zip')->folder('test')->add('composer.json');
 $zipper->zip('test.zip')->folder('test')->add('composer.json','test');
