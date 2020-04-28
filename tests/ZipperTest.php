@@ -1,6 +1,6 @@
 <?php
 
-namespace Chumper\Zipper;
+namespace Epicsagas\Zipper;
 
 use Exception;
 use Illuminate\Filesystem\Filesystem;
@@ -11,7 +11,7 @@ use RuntimeException;
 class ZipperTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \Chumper\Zipper\Zipper
+     * @var \Epicsagas\Zipper\Zipper
      */
     public $archive;
 
@@ -34,7 +34,7 @@ class ZipperTest extends \PHPUnit_Framework_TestCase
 
     public function testMake()
     {
-        $this->assertSame('Chumper\\Zipper\\ArrayArchive', $this->archive->getArchiveType());
+        $this->assertSame('Epicsagas\\Zipper\\ArrayArchive', $this->archive->getArchiveType());
         $this->assertSame('foo', $this->archive->getFilePath());
     }
 

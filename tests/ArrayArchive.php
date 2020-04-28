@@ -1,8 +1,8 @@
 <?php
 
-namespace Chumper\Zipper;
+namespace Epicsagas\Zipper;
 
-use Chumper\Zipper\Repositories\RepositoryInterface;
+use Epicsagas\Zipper\Repositories\RepositoryInterface;
 
 class ArrayArchive implements RepositoryInterface
 {
